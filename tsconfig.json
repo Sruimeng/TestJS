@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "esnext",
+    "allowJs": true,
+    "lib": [
+      "es2018",
+      "dom"
+    ],
+  },
+  "include": [
+    "./src/*"
+  ],
+  "exclude": [
+    "./node_modules"
+  ]
+}
