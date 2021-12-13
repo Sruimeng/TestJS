@@ -2,7 +2,7 @@
   "name": "toy",
   "version": "1.0.0",
   "description": "",
-  "main": "toy.js",
+  "main": "test.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack serve --inline",
@@ -30,7 +30,8 @@
     "example": "example"
   },
   "dependencies": {
-    "source-map-loader": "^1.0.0"
+    "source-map-loader": "^1.0.0",
+    "@babel/polyfill": "^7.12.1"
   },
   "repository": {
     "type": "git",

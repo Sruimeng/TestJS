@@ -1,8 +1,3 @@
-import { GLBuffer } from "./buffer";
-import { Shader } from "./shader";
-
-// export {Shader} from "./shader"
-
 
 const canvas = document.body.appendChild(document.createElement('canvas'));
   // 初始化 GL context
@@ -35,25 +30,4 @@ const canvas = document.body.appendChild(document.createElement('canvas'));
   `;
 
   const shader =new Shader(gl,vsSource,fsSource);
-  const programInfo={
-    program:shader,
-    attribLocation:{
-      aPostion:gl.getAttribLocation(shader,'aPostion'),
-    },
-    uniformLocation:{
-      uProjectionMarix:gl.getUniformLocation(shader,'uProjectionMatirx'),
-      uModelMatrix:gl.getUniformLocation(shader,'uModelMatrix'),
-    } 
-  }
-
-  const positions = [
-    1.0,  1.0,
-   -1.0,  1.0,
-    1.0, -1.0,
-   -1.0, -1.0,
- ];
-
- let buffer= new GLBuffer(gl,positions);
- 
   console.log(shader);
- 

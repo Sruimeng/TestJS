@@ -18,6 +18,7 @@ export class Shader{
    this._gl=gl;
    this._vertexShader=vsSource;
    this._fragmentShader=fsSource;
+   this._compile();
   }
   
   public getVertexShader(){return this._vertexShader;}
